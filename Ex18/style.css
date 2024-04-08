@@ -1,0 +1,33 @@
+@charset "UTF8";
+
+body {
+
+    background-color: rgba(2, 97, 2, 0.203);
+    font-family: sans-serif;
+}
+
+#principal {
+
+    background-color: green;
+    color: white;
+
+
+
+}
+
+h1{
+    background-color: yellowgreen;
+
+}
+    
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avançado {
+    color: red;
+}

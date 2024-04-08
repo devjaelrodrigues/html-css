@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando hover</title>
+<style>
+
+       
+    
+       div > p {
+
+            display: none;
+        }
+
+        div:hover > p  {
+            display: block;
+        }
+
+        div:hover { 
+            color: red; 
+        }
+
+
+        a:visited { 
+          color: brown;
+
+        }
+        a:active {
+            color: yellow;
+        }
+        a:hover {
+
+            color: black;
+        }
+        a::after { 
+            content: '[link]' ;
+            text-decoration: none;
+            color: gray;
+        }
+</style>
+</head>
+<body>
+    <p>Testando subclasse hover</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ENCONDIDO</p>
+    </div>
+
+        <h1> Testando pseudo elementos </h1>
+
+        <ol>
+            <li><a href="https://www.google.com.br/">Google</a></li>
+            <li><a href="https://github.com/gustavoguanabara">Github</a></li>
+            <li><a href="https://www.youtube.com/@CursoemVideo">Curso em video</a></li>
+        </ol>
+</body>
+</html>
