@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <div>  <!-- Geralmente formularios sao criados em div-->
+        <form action="cadastro.php" method="post" autocomplete="off">   <!--'ACTION' parametro para referenciar o arquivo que contem os dados 
+        'METHOD POST' tem dados sensiveis como senha  por questoes de segurança -->
+        <label for="iname">  <!--para que possamos relacionar o elemento Nome com a caixa de texto precisamos chamar pelo ID (FUNDAMENTAL)-->
+            <p>Nome: <input type="text" name="name" id="iname" required maxlength="10" size="20" placeholder="Nome de usuario "> <!-- 'SIZE' tamanho da caixa 'PLACEHOLDER' indica o conteudo que deve ser armazenado na caixa -->
+            </p>   <!--'MAXLENGHT & MINLENGT' > qtd de caractes permitidos dentro da caixa-->
+             
+        </label>
+        <label for="ipassword">
+            <p>Senha: <input type="password" name="password" id="ipassword" required></p> <!--'TYPE=PASSOWRD'-->
+        </label>
+        <input type="submit" value="Send">
+        <input type="reset"  value="Clear">   <!--New  bottom para resetar os campos prenchidos -->
+    </form>
+    </div>
+</body>
+</html>

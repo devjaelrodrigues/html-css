@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+
+<body>
+    <h1>Primeiro Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">      <!-- Criando form1 METHOD GET & POST-->
+            <p><label for="inome"> Nome:</label>  <!--'label' etiqueta para referenciar a palavra 'nome' com    a   caixa de texto /PARAMETRO 'FOR' utilizado para chamar a caixa de texto pelo 'ID' -->
+            <input type="text" name="nome" id="inome">   <!-- 'name' e 'id ' indentificadores para refenciar a caixa de texto dependendo a linguagem a ser utilizada-->
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="Enviar">  <!-- 'TYPE=SUBMIT' botao para enviaro formulario 'VALUE' nome do botao-->
+        </body>
+    </form>
+
+</html>
