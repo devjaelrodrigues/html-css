@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form007SELECT</title>
+
+</head>
+
+<body>
+    <h1> Exemplo Form007</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"> <!--OPEN FORM-->
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <!-- SELECT usuário não insere um dado digitando, ele simplesmente seleciona a opção                                               precisamos relacionar o SELECT com o elemento LABEL -->
+            <optgroup label="Regiao sudeste "> <!--OUTGROUP Definiu um grupo de acordo com os dados abaixo-->
+                <option value="" selected>--selecione--</option> <!--OPTION - opção para selecionar no menu(select)-->
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+                <option value="MG">Minas gerais </option>
+            </optgroup>
+            <optgroup label="Regiao nordeste"> <!--OUTGROUP Definiu um grupo de acordo com os dados abaixo-->
+                <option value="PE">Pernambuco</option>
+                <option value="AL">Alagoas</option> <!--OPTION - opção para selecionar no menu(select)-->
+                <option value="PB">Paraiba</option>
+            </optgroup>
+           
+        </select>
+        <p> <!--OUTRA FORMA DE CRIAR UMA LISTA -->>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">  <!--iNPUT tipo text com atributo 'LIST'-->
+            <datalist id="lstprof">                             <!-- DATALIST precisa ser atribuido a LABEL-->
+                <option value="Desenvolvedor"></option>
+                <option value="Operador"></option>
+                <option value="Apostador"></option>
+            </datalist>
+
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+
+        <p>
+            <label for="imsg">Digite sua mensagem</label> <br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+    </form>
+</body>
+
+</html>
