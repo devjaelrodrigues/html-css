@@ -1,0 +1,32 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+menu {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+
+menu ol li {
+    padding: 5px;
+    margin:  5px;
+    display: inline;
+    
+}
+article { 
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+article h1 {
+    padding-bottom: 20px;
+}
