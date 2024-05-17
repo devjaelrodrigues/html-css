@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <header>
         <h1>
                 Menu responsivo
         </h1>
-
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">  <!--funcao em javascript chamada on click - sintax sensivel a caixa -->
+            menu
+            </span>
+        <menu id="item">
                <ul>
 
                     <li><a href="#">Opção 1 </a></li>
@@ -41,5 +44,20 @@
         </article>
         
     </main>
+    <script>
+
+       function clickMenu(){
+         
+        if (item.style.display  == 'block')  {
+            item.style.display = 'none'
+        } else {
+            item.style.display = ' block'
+        }
+
+       }    /* function click menu 
+       condicional  para if e else 
+       se menu for igual a block 
+       menu esta visivel  caso o menu nao esteja visivel clicando o menu vai aparecer*/
+    </script>
 </body>
 </html>
