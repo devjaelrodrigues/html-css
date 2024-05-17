@@ -6,17 +6,20 @@
     Desktops, large screens – 1025px — 1200px.
     Extra large screens, TV – 1201px, and more*/
 
-    @media screen and (min-width:768px) and (max-width:992px){
+    @media screen and (min-width:768px) and (max-width:992px){  /*versao para tablet
+        @media A declaração e sequida de uma lista de condicoes como 'min-width' ,'max-width'
+        ex tela for maior ou igual a 768px*/
             
         body {
-            background-image: url(/imagens/back-tablet.jpg);
+            background-image: url(/imagens/back-tablet.jpg);  /*imagem de fundo*/
         }
 
         img#phone{
-            display: none;
+            display: none;   /*foi feito id para cada icon neste caso utilizamos o display para desabilitar o icon
+             */
         }
         img#tablet{
-            display: block;
+            display: block;  /*De acordo com a versao utiilizamos o display block para habilitar o icon de acordo com a versao tablet*/
         }
         
     }
@@ -26,4 +29,29 @@
             body{
                 background-image: url(/imagens/back-pc.jpg);
             }
+            img#phone{
+                display: none;
+            }
+            img#pc {
+                display: block;
+            }
 }
+
+  @media screen and (min-width:1200px)  {
+          
+    body{
+
+        background-image: url(/imagens/back-tv.jpg);
+         }
+
+         img#pc  {
+
+            display: none;
+            
+         }
+         img#tv{
+            display:block
+         }
+    }
+
+   
