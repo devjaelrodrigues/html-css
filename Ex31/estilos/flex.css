@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: sans-serif;
+  list-style: none;
+
+}
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 100px;
+  align-items: center;
+
+
+}
+
+header a {
+
+
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  display: block;
+
+
+}
+
+ul {
+
+  display: flex;
+
+}
+
+body h1 {
+
+  text-align: center;
+  padding: 50px;
+}
+
+.flex {
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+}
+
+.flex img {
+
+  width: 100%;
+}
+
+.flex>div {
+
+  flex: 1 1 200px;
+  margin: 10px;
+
+}
+
+/*GRID LAYOOUT CONCEITOS */
+
+
+.grid img{    
+
+  width: 100%;          /*Permite a imagem chegar em seu tamanho maximo*/
+}
+.grid {
+  display: grid;   /*Innciando grid-layout */
+  max-width: 800px;    /*O conteudo pode chagar ate 800px*/
+  grid-template-columns: repeat(3, 1fr );   /* configura as colunas 'repeat'- ja existe no codigo uam configurao de coluna  '(3, 1fr)'* 3 colunas 1linha fracionada fr */
+  margin: auto;      /*Posicinou automaticamente os elementos no centro da tela */
+  grid-gap: 20px;    /*pode configurar os espaçamentos das colunas semelhante a margin */
+  padding: 10px;
+
+}
+
+.grid > div:nth-child(n + 4) {               /*para configurar os elementos precisamso utilizar o seletor do css com mais precisao .grid - classe do section/ > div  - conteudo esta dentro da div /nth-child -seletor dentro da div informando qual conteudo dentro dessa div sera modificado */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.grid > div.anuncio { 
+
+  grid-column: 1;
+  grid-row: 2/5;
+  display: block;
+  
+  
+}
+
+@media (max-width:600px){
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+  .grid > div:nth-child(n + 4) {
+
+
+     display: block;
+  }
+
+  .grid > div.anuncio{
+
+     grid-column:auto ;
+     grid-row: auto;
+  }
+}
+
+/*GRID2*/
+
+ .grid2 img {
+
+  width: 100%;
+
+ }
+
+ .grid2 {
+  display: grid;
+  grid-template-columns:  1fr 200px;
+  grid-gap: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 800px;
+ }
+
+ @media (max-width:600px ){
+
+    .grid2{ grid-template-columns: 1fr;
+  
+    }
+    .sidebar{
+
+      display: flex;
+      overflow: scroll;
+    }
+
+    .sidebar > div {
+
+        flex: 1 0 200px;
+     
+    }
+ }
+
+ /*GRID3*/
+
+  .grid3 img{
+
+    width: 100%;
+  }
+  .grid3{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 800px;
+    margin: auto;
+    grid-gap: 20px;
+  }
+
+  .grid3-item:nth-child(1){
+
+    grid-row: 1/3;
+}

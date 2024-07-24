@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste flex 10/06</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: xx-large;
+           
+        }
+
+        .container{
+            display: flex;
+            flex-direction:column;
+            
+            
+            
+        }
+
+        .quadrado{
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            text-align: center;
+            color: whitesmoke;
+            background-image: linear-gradient(to right,yellow,green);
+            box-shadow: 1px 1px 1px 1px black;
+            
+            
+        }
+        .quadrado:hover{
+            background-image: linear-gradient(to left,yellow,green);
+                
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="quadrado">A</div>
+        <div class="quadrado">B</div>
+        <div class="quadrado">C</div>
+        <div class="quadrado">D</div>
+        <div class="quadrado">E</div>
+    </section>
+</body>
+</html>

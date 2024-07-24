@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        
+       body{
+       
+        width: 100vw;
+
+       }
+       .container{  /*class 'container' tags como div,section sao tags que podem ser caracterizados como 'container' */
+       
+        
+         display: flex;    /* Inciiando com o 'display:flex' para caixa ficar flexivel a caixa container ou section */
+         flex-direction: row;  /*a direção padrao do flex sempre vira 'row' - linha  podendendo altenar para 'column' - coluna */
+         flex-wrap: wrap;
+         padding: 5px;
+         margin: auto;
+         
+
+
+         /* flex-flow: row wrap;  shorthand da propriedade 'flex-direction' e 'flex-wrap' */
+         
+        
+       }
+       .quadrado{  /*divs */
+        margin: 5px;
+        background-color: gray;    
+        border: 1px solid rgba(0, 0, 0, 0.462);   /*configuraçoes do elemento tamanho cor borda */
+        height: 100px;
+        width:  100px;   
+        align-content: center;
+        text-align: center;
+        color: white;
+        box-shadow: 1px 1px 1px 1px black;
+       
+
+       }
+
+       .quadrado:hover{
+
+         background-color: aqua ;
+       }
+
+       @media (max-width:600px){   
+
+        .container  {
+            
+           
+            flex-flow: column-reverse wrap-reverse 
+        }
+       }
+        
+    </style>
+</head>
+<body>
+        <section class="container">
+
+                <div class="quadrado">1</div>
+                <div class="quadrado">2</div>
+                <div class="quadrado">3</div>
+                <div class="quadrado">4</div>
+                <div class="quadrado">5</div>
+                <div class="quadrado">6</div>
+                <div class="quadrado">7</div>
+                <div class="quadrado">8</div>
+                <div class="quadrado">9</div>
+                <div class="quadrado">10</div>
+
+        </section>
+</body>
+</html>

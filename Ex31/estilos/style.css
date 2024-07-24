@@ -1,0 +1,70 @@
+
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-decoration: none;
+    list-style: none
+}
+
+header{
+    display: flex; /*modelo flex-box*/
+    justify-content: space-between;  /*espaçamento estre os containers  por isso o logo ficou de um lado e o menu do outro */ 
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;  /*caso a tela do dispositivo seja muito pequena ocorre uma quebra de linha */
+    background-color: black;
+    
+}
+
+a{
+    color: whitesmoke;
+
+}
+
+.menu { 
+    
+    display: flex;
+    
+    }
+
+    .menu li {
+
+        margin-left: 10px;  
+    }
+    .menu a{
+
+        padding: 10px;
+        display: block;  /*aumentando a area do  click*/
+    }
+    .menu a:hover{
+
+        color: gray;
+    }
+      /*interação de coluna e linha e necessario usar grid layout*/
+
+      /*colocando as imagens uma ao lado da outra utilizando flexbox*/
+
+
+      .flex{
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: auto; /*centralizou o container para organizar as imagens */
+
+      }
+      .flex > div {
+
+        flex:1 1 200px;  /*colocou as imagem em ordem horizontal */
+        margin: 10px;
+      }
+
+      .flex img{
+
+        width: 100%;
+      }
+
